@@ -1,7 +1,17 @@
 .App {
   text-align: center;
+  margin-top: 5%;
 }
 
+#slack {
+  display: none;
+}
+
+img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +36,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    margin-top: 25%;
+  }
 }
 
 @keyframes App-logo-spin {
