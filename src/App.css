@@ -114,7 +114,7 @@
 }
 @media only screen and (max-width: 600px) {
   .App {
-    margin-top: 25%;
+    margin-top: 20%;
   }
   #share-icon {
     display: none;
