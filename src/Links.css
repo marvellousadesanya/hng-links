@@ -12,6 +12,13 @@
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  color: #101828;
+  font-family: "Inter", sans-serif;
+}
+
+.btn:hover {
+  background-color: #d0d5dd;
+  transition: 500ms;
 }
 
 @media only screen and (max-width: 600px) {
