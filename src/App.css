@@ -19,29 +19,18 @@
   z-index: 5;
 }
 
-/* #ig-icon {
-  position: absolute;
-  z-index: 2;
-  bottom: 5px;
-  left: 10%;
-  display: none;
-  padding: 0;
-  transition: 500ms;
-  background-color: #282c34;
-} */
-
 #ig-icon {
   position: absolute;
   z-index: 2;
   bottom: 5px;
-  display: none;
+
   left: 40%;
 }
 
-.header_div:hover #ig-icon {
+/* .header_div:hover #ig-icon {
   display: block;
   z-index: 10;
-}
+} */
 
 #twitter {
   font-family: "Inter", sans-serif;
@@ -90,15 +79,22 @@
 }
 
 .overlay {
+  display: none;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
   width: 88px;
   height: 88px;
-  display: none;
-  background-color: #282c34;
-  opacity: 1;
 }
 
-.overlay:hover {
+.header_div:hover .overlay {
   display: block;
+  background: linear-gradient(
+    0deg,
+    rgba(52, 64, 84, 0.75),
+    rgba(52, 64, 84, 0.75)
+  );
+  cursor: pointer;
 }
 
 #mobile_menu {
