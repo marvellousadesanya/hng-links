@@ -1,4 +1,5 @@
 import "./Links.css";
+import { Link } from "react-router-dom";
 
 function Links() {
   return (
@@ -29,11 +30,11 @@ function Links() {
             Book designs
           </button>
         </a>
-        <a href="/contact">
+        <Link to="/contact">
           <button id="contact" className="btn">
             Contact Me
           </button>
-        </a>
+        </Link>
       </div>
     </>
   );

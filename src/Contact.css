@@ -184,20 +184,19 @@ textarea:required:focus {
 /* Mobile responsiveness */
 @media only screen and (max-width: 600px) {
   #contact-me-container {
+    margin-top: -15%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 64px 0px;
+    padding: 0px 16px;
     gap: 48px;
-    overflow-x: hidden;
 
-    position: absolute;
     width: 375px;
-    height: 884px;
-
-    left: 0px;
-    top: 0px;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: 4;
   }
+
   #contact-me {
     font-weight: 600;
     font-size: 36px;
@@ -205,9 +204,8 @@ textarea:required:focus {
     padding: 0 16px;
   }
   #contact-me-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    width: 343px;
+    height: 56px;
     padding: 0 16px;
   }
   form {
@@ -227,11 +225,15 @@ textarea:required:focus {
     text-align: left;
     /* gap: 22px; */
   }
-
+  #first-name-container,
+  #second-name-container {
+    margin: 8px 0;
+  }
   #first-name,
   #last-name {
     width: 343px;
     display: flex;
+    padding: 2px 0;
     flex-direction: column;
   }
   #checkbox-area {
