@@ -29,6 +29,11 @@ function Links() {
             Book designs
           </button>
         </a>
+        <a href="/contact">
+          <button id="contact" className="btn">
+            Contact Me
+          </button>
+        </a>
       </div>
     </>
   );
