@@ -116,8 +116,15 @@
 
 footer {
   display: flex;
+  flex-direction: row !important;
   justify-content: space-around;
-  padding: 30px;
+  padding: 50px 15px;
+}
+
+footer img {
+  width: 185.03px;
+  height: 24.74px;
+  /* position: absolute; */
 }
 
 @media only screen and (max-width: 600px) {

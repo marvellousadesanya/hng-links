@@ -1,6 +1,7 @@
 import "./App.css";
 import Contact from "./Contact";
 import Home from "./Home";
+import Footer from "./Footer";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
+        <Footer />
       </div>
     </>
   );
