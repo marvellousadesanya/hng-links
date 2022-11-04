@@ -4,11 +4,12 @@ import "./Contact.css";
 
 function Contact() {
   const [message, setMessage] = useState("");
+  const [error, setError] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!message) {
-      // setMessage(message);
+    if (message.length == 0) {
+      setError(true);
       console.log("Set message");
     }
   };
@@ -53,9 +54,12 @@ function Contact() {
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="send me a message"
-                  required
                 />
-                {!message ? <p>Please insert a message</p> : ""}
+                {error && message.length <= 0 ? (
+                  <p>Please insert a message</p>
+                ) : (
+                  ""
+                )}
               </div>
 
               <div id="checkbox-area" className="inputs">
