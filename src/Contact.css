@@ -173,6 +173,15 @@ textarea:required:focus {
   border-radius: 8px;
 }
 
+#message-textarea p {
+  color: red;
+  /* display: none; */
+}
+
+.message-feedback {
+  display: block;
+}
+
 .submit-btn {
   display: flex;
   flex-direction: row;

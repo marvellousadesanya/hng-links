@@ -3,6 +3,15 @@ import "./App.css";
 import "./Contact.css";
 
 function Contact() {
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!message) {
+      // setMessage(message);
+      console.log("Set message");
+    }
+  };
   return (
     <>
       <div id="contact-me-container">
@@ -14,7 +23,7 @@ function Contact() {
             </p>
           </div>
           <div id="form-container">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div id="name-row" className="inputs">
                 <div id="first-name-container">
                   <label>First Name</label>
@@ -38,10 +47,17 @@ function Contact() {
                 <label>Email</label>
                 <input type="email" placeholder="yourname@email.com" required />
               </div>
+
               <div id="message-textarea" className="inputs">
                 <label>Message</label>
-                <textarea placeholder="send me a message" required />
+                <textarea
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="send me a message"
+                  required
+                />
+                {!message ? <p>Please insert a message</p> : ""}
               </div>
+
               <div id="checkbox-area" className="inputs">
                 <input type="checkbox" id="checkbox" required />
                 <p>
@@ -49,7 +65,9 @@ function Contact() {
                 </p>
               </div>
               <div id="submit-btn-section" className="inputs">
-                <button className="submit-btn">Send Message</button>
+                <button type="submit" className="submit-btn">
+                  Send Message
+                </button>
               </div>
             </form>
           </div>
