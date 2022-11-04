@@ -113,6 +113,13 @@
   display: none;
   position: absolute;
 }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
 @media only screen and (max-width: 600px) {
   .App {
     margin-top: 20%;
