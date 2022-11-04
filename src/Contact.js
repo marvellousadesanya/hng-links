@@ -36,7 +36,7 @@ function Contact() {
 
               <div id="email" className="inputs">
                 <label>Email</label>
-                <input placeholder="yourname@email.com" required />
+                <input type="email" placeholder="yourname@email.com" required />
               </div>
               <div id="message-textarea" className="inputs">
                 <label>Message</label>
