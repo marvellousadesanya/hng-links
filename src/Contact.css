@@ -74,29 +74,27 @@ input {
 }
 
 input::placeholder {
-  /* width: 692px;
-  height: 108px; */
+  width: 692px;
+  height: 108px;
   color: #667085;
   margin-left: 10px;
   top: 30%;
-  /* padding: 0;
-  margin: 0; */
-  /* position: absolute; */
 
   /* Text md/Normal */
 
   font-family: "Inter";
-  /* font-style: normal;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 10px; */
+  padding-left: 10px;
 }
 
 textarea::placeholder {
   width: 692px;
   height: 108px;
   margin-left: 10px;
+
   /* Text md/Normal */
 
   font-family: "Inter";
@@ -277,9 +275,24 @@ textarea:required:focus {
     padding: 2px 0;
     flex-direction: column;
   }
+  #checkbox {
+    width: 20px !important;
+    height: 20px !important;
+    padding: 5px;
+  }
+  #checkbox:checked:after {
+    font-size: 13px;
+    padding-right: 90px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #1570ef;
+    content: "\f00c";
+  }
+
   #checkbox-area {
     width: 311px;
     height: 48px;
+
     text-align: left;
   }
 
