@@ -6,7 +6,7 @@ function Footer() {
     <>
       <footer>
         <img src={require("./Vector.png")}></img>
-        <p>HNG Zuri Internship</p>
+        <p>HNG Internship 9 Frontend Task</p>
         <img src={require("./I4G.png")}></img>
       </footer>
     </>

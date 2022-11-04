@@ -117,8 +117,15 @@
 footer {
   display: flex;
   flex-direction: row !important;
-  justify-content: space-around;
-  padding: 50px 15px;
+  justify-content: space-between;
+  gap: 90px;
+  padding: 30px 15px;
+  color: #667085;
+  margin-top: 5%;
+  margin-left: 5%;
+  border-top: 1px solid;
+  width: 90vw;
+  align-content: center;
 }
 
 footer img {
@@ -144,13 +151,9 @@ footer img {
     bottom: 45%;
     left: 35%;
   }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  footer {
+    display: block;
+    width: 100;
+    text-align: left;
   }
 }
