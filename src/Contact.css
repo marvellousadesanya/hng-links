@@ -81,16 +81,16 @@ input::placeholder {
   top: 30%;
   /* padding: 0;
   margin: 0; */
-  position: absolute;
+  /* position: absolute; */
 
   /* Text md/Normal */
 
   font-family: "Inter";
-  font-style: normal;
+  /* font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 10px;
+  padding-left: 10px; */
 }
 
 textarea::placeholder {
@@ -250,6 +250,10 @@ textarea:required:focus {
   }
   input {
     width: 343px;
+  }
+  input::placeholder {
+    width: 315px;
+    height: 24px;
   }
   textarea {
     width: 320px !important;
