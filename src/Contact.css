@@ -74,8 +74,8 @@ input {
 }
 
 input::placeholder {
-  width: 692px;
-  height: 108px;
+  /* width: 692px;
+  height: 108px; */
   color: #667085;
   margin-left: 10px;
   top: 30%;
