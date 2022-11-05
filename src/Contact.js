@@ -53,6 +53,7 @@ function Contact() {
                 <label>Message</label>
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
+                  className={error ? "textarea-error" : ""}
                   placeholder="send me a message"
                 />
                 {error && message.length <= 0 ? (
