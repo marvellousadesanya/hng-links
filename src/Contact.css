@@ -67,6 +67,10 @@ input {
   width: 720px;
   height: 44px;
   border: 1px solid #d0d5dd;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+  /* color: #667085; */
   /* Shadow/xs */
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
@@ -94,6 +98,8 @@ textarea::placeholder {
   width: 692px;
   height: 108px;
   margin-left: 10px;
+
+  color: #667085;
 
   /* Text md/Normal */
 
@@ -146,6 +152,10 @@ textarea {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
 
   /* Auto layout */
 
@@ -278,7 +288,8 @@ textarea:required:focus {
   #checkbox {
     width: 20px !important;
     height: 20px !important;
-    padding: 5px;
+    padding: 8px;
+    position: relative;
   }
   #checkbox:checked:after {
     font-size: 13px;
@@ -287,6 +298,9 @@ textarea:required:focus {
     font-weight: 900;
     color: #1570ef;
     content: "\f00c";
+    position: absolute;
+    top: 10%;
+    left: 0;
   }
 
   #checkbox-area {
