@@ -27,15 +27,15 @@ function Contact() {
             <form onSubmit={handleSubmit}>
               <div id="name-row" className="inputs">
                 <div id="first-name-container">
-                  <label>First Name</label>
-                  <input
+                  <label htmlFor="first_name">First Name</label>
+                  <input type="text"
                     id="first_name"
                     placeholder="Enter your first name"
                     required
                   />
                 </div>
                 <div id="second-name-container">
-                  <label>Last Name</label>
+                  <label htmlFor="last_name">Last Name</label>
                   <input
                     id="last_name"
                     placeholder="Enter your first name"
@@ -45,12 +45,12 @@ function Contact() {
               </div>
 
               <div id="email-container" className="inputs">
-                <label>Email</label>
+                <label htmlFor="email">Email</label>
                 <input id="email" type="email" placeholder="yourname@email.com" required />
               </div>
 
               <div id="message-textarea" className="inputs">
-                <label>Message</label>
+                <label htmlFor="email">Message</label>
                 <textarea id="message"
                   onChange={(e) => setMessage(e.target.value)}
                   className={error ? "textarea-error" : ""}
