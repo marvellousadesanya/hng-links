@@ -70,7 +70,7 @@ function Contact() {
                 </p>
               </div>
               <div id="submit-btn-section" className="inputs">
-                <button type="submit" I'd="btn__submit">
+                <button type="submit" id="btn__submit">
                   Send Message
                 </button>
               </div>
