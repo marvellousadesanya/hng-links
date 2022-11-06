@@ -206,7 +206,7 @@ textarea:required:focus {
   display: block;
 }
 
-.submit-btn {
+#btn__submit {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -290,8 +290,8 @@ textarea:required:focus {
   #second-name-container {
     margin: 8px 0;
   }
-  #first-name,
-  #last-name {
+  #first_name,
+  #last_name {
     width: 343px;
     display: flex;
     padding: 2px 0;
@@ -322,7 +322,7 @@ textarea:required:focus {
     text-align: left;
   }
 
-  .submit-btn {
+  #btn__submit {
     width: 343px;
   }
 }
