@@ -51,7 +51,7 @@ function Contact() {
 
               <div id="message-textarea" className="inputs">
                 <label>Message</label>
-                <textarea
+                <textarea id="message"
                   onChange={(e) => setMessage(e.target.value)}
                   className={error ? "textarea-error" : ""}
                   placeholder="send me a message"
