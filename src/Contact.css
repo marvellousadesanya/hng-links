@@ -230,7 +230,7 @@ textarea:required:focus {
   border-radius: 8px;
 }
 
-.submit-btn:hover {
+#btn__submit:hover {
   cursor: pointer;
   background: #b2ddff;
 }
