@@ -44,9 +44,9 @@ function Contact() {
                 </div>
               </div>
 
-              <div id="email" className="inputs">
+              <div id="email-container" className="inputs">
                 <label>Email</label>
-                <input type="email" placeholder="yourname@email.com" required />
+                <input id="email" type="email" placeholder="yourname@email.com" required />
               </div>
 
               <div id="message-textarea" className="inputs">
