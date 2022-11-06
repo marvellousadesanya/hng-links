@@ -29,7 +29,7 @@ function Contact() {
                 <div id="first-name-container">
                   <label>First Name</label>
                   <input
-                    id="first-name"
+                    id="first_name"
                     placeholder="Enter your first name"
                     required
                   />
@@ -37,7 +37,7 @@ function Contact() {
                 <div id="second-name-container">
                   <label>Last Name</label>
                   <input
-                    id="last-name"
+                    id="last_name"
                     placeholder="Enter your first name"
                     required
                   />
@@ -70,7 +70,7 @@ function Contact() {
                 </p>
               </div>
               <div id="submit-btn-section" className="inputs">
-                <button type="submit" className="submit-btn">
+                <button type="submit" I'd="btn__submit">
                   Send Message
                 </button>
               </div>
