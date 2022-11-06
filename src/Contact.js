@@ -50,7 +50,7 @@ function Contact() {
               </div>
 
               <div id="message-textarea" className="inputs">
-                <label htmlFor="email">Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea id="message"
                   onChange={(e) => setMessage(e.target.value)}
                   className={error ? "textarea-error" : ""}

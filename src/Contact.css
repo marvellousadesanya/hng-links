@@ -44,7 +44,7 @@ form {
   display: flex;
   flex-direction: row;
   text-align: left;
-  gap: 22px;
+  gap: 21px;
 }
 
 #first_name,
@@ -119,8 +119,8 @@ textarea::placeholder {
 }
 
 #checkbox {
-  width: 20px;
-  height: 20px;
+  width: 20px !important;
+  height: 20px !important;
   appearance: none;
 
   /* Base/White */
@@ -244,11 +244,12 @@ textarea:required:focus {
     align-items: flex-start;
     padding: 0px 16px;
     gap: 48px;
-
     width: 375px;
     height: 884px;
     overflow-x: hidden;
     z-index: 4;
+    margin-left: 0;
+    margin-right: 0;
   }
   #contact-header {
     padding: 15px 0;
@@ -267,10 +268,9 @@ textarea:required:focus {
   }
   form {
     padding: 0 16px;
+    margin: 0;
   }
-  input {
-    width: 343px;
-  }
+
   input::placeholder {
     width: 315px;
     height: 24px;
@@ -291,7 +291,8 @@ textarea:required:focus {
     margin: 8px 0;
   }
   #first_name,
-  #last_name {
+  #last_name,
+  #email {
     width: 343px;
     display: flex;
     padding: 2px 0;
