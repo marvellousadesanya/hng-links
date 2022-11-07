@@ -30,8 +30,8 @@ function Links() {
             Book designs
           </button>
         </a>
-        <Link to="/contact">
-          <button id="contact" className="btn">
+        <Link to="/contact" id="contact">
+          <button className="btn">
             Contact Me
           </button>
         </Link>
